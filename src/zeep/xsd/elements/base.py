@@ -17,7 +17,8 @@ class Base:
 
     @property
     def is_optional(self) -> bool:
-        return self.min_occurs == 0
+        return True
+        #return self.min_occurs == 0
 
     def parse_args(self, args, index=0):
         result = {}  #: typing.Dict[str, typing.Any]
